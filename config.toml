@@ -1,0 +1,17 @@
+
+
+SIZES = [6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20, 24, 28, 32, 36, 48, 60, 72]
+
+[FONTS]
+mono = "FreeMono.ttf"
+mono_bold = "FreeMonoBold.ttf"
+mono_oblique = "FreeMonoOblique.ttf"
+mono_bold_oblique = "FreeMonoBoldOblique.ttf"
+serif = "FreeSerif.ttf"
+serif_bold = "FreeSerifBold.ttf"
+serif_oblique = "FreeSerifItalic.ttf"
+serif_bold_oblique = "FreeSerifBoldItalic.ttf"
+sans = "FreeSans.ttf"
+sans_bold = "FreeSansBold.ttf"
+sans_oblique = "FreeSansOblique.ttf"
+sans_bold_oblique = "FreeSansBoldOblique.ttf"
