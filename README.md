@@ -29,3 +29,7 @@ label = Label(font=MONO_9, text="Hi Mom!")
  * Add it to the `[FONTS]` section of `config.toml`
 
 Presently all fonts are genreated at the same range of sizes, `SIZES` in `config.toml`.
+
+## Variants
+
+Two variants of each font are generated: The ASCII variant with code points 32-126, and the full variant with all glyphs in the original font. The ASCII variant can be especially useful when flash space is at a premium.
