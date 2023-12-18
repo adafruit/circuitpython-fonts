@@ -35,7 +35,7 @@ the GNU FreeFont software before embedding it. This is true even though
 portions of the software become part of the document.
 
 Therefore users of fonts released with this exception need not concern
-themselves with the license terms to: 
+themselves with the license terms to:
 
    Create a printable file using the fonts.
    - Publish such a file.
