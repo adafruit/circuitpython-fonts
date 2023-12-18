@@ -23,7 +23,7 @@ def build(src, dest, size, variant):
     )
     print(destdir)
 
-    package = f"circuitpython_font_{dest}_{size}{uvariant}"
+    package = f"font_{dest}_{size}{uvariant}"
     packagedir = destdir / package
     packagedir.mkdir(parents=True)
     init_py = packagedir / "__init__.py"

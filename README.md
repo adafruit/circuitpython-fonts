@@ -10,12 +10,12 @@ It can be used with circup for easy installation:
 
 ```
 circup bundle-add jepler/circuitpython-fonts
-circup install circuitpython_font_mono_9_ascii
+circup install font_mono_9_ascii
 ```
 
 The font can be used like so:
 ```
-from circuitpython_font_mono_9_ascii import FONT as MONO_9
+from font_mono_9_ascii import FONT as MONO_9
 from adafruit_display_text.bitmap_label import Label
 
 # ...
