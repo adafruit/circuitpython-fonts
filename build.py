@@ -96,6 +96,6 @@ if __name__ == "__main__":
         deque(pool.starmap(build, targets), 0)
 
     check_call(
-        "circuitpython-build-bundles --output_directory dist --filename_prefix circuitpython-font --library_location libraries/ --library_depth 1",
+        "circuitpython-build-bundles --output_directory dist --filename_prefix circuitpython-fonts --library_location libraries/ --library_depth 1",
         shell=True,
     )
