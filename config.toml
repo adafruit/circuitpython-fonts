@@ -1,18 +1,13 @@
 # SPDX-FileCopyrightText: 2023 Jeff Epler for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
-SIZES = [6, 7, 8, 9, 10, 11, 12, 14, 16, 18, 20, 24, 28, 32, 36, 48, 60, 72]
+[defaults]
+sizes = [6, 8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 42, 48, 54, 60, 72, 84, 96, 108, 120, 144]
 
-[FONTS]
-mono = "FreeMono.ttf"
-mono_bold = "FreeMonoBold.ttf"
-mono_oblique = "FreeMonoOblique.ttf"
-mono_bold_oblique = "FreeMonoBoldOblique.ttf"
-serif = "FreeSerif.ttf"
-serif_bold = "FreeSerifBold.ttf"
-serif_oblique = "FreeSerifItalic.ttf"
-serif_bold_oblique = "FreeSerifBoldItalic.ttf"
-sans = "FreeSans.ttf"
-sans_bold = "FreeSansBold.ttf"
-sans_oblique = "FreeSansOblique.ttf"
-sans_bold_oblique = "FreeSansBoldOblique.ttf"
+# Note that subset ranges are *inclusive* of the upper bound in otf2bdf
+[variants]
+#ascii = "32_126"
+latin1 = "32_255"
+
+# [FONT.FontFileNameWithoutExtension]
+# name = "desired_package_base_name"
