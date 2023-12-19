@@ -90,7 +90,7 @@ def build(src, dest, size, variant_name, variant_arg):
 
 def filename_to_package_name(filename):
     s = re.sub("[A-Z]+", lambda m: "_" + m.group(0).lower(), filename)
-    s = re.sub("[^a-z0-9_]+", "_", s)
+    s = re.sub("[^a-z0-9]+", "_", s)
     s = s.removeprefix("_")
     return s
 
