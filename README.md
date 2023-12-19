@@ -6,7 +6,7 @@
 The goal of this repository is to generate a number of fonts that can be
 used in CircuitPython by simply importing them.
 
-It can be used with circup for easy installation:
+It can be used with (circup)[https://pypi.org/project/circup/] for easy installation:
 
 ```sh
 circup bundle-add jepler/circuitpython-fonts # You only need to do this once
