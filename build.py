@@ -43,6 +43,17 @@ def build(src, dest, size, variant_name, variant_arg):
             """
         )
     )
+    requirements_text = destdir / "requirements.txt"
+    requirements_text.write_text(
+        textwrap.dedent(
+            f"""\
+            # SPDX-FileCopyrightText: 2023 Jeff Epler for Adafruit Industries
+            # SPDX-License-Identifier: Unlicense
+
+            adafruit-circuitpython-bitmap-font
+            """
+        )
+    )
     readme_text = destdir / "README.txt"
     readme_text.write_text(
         textwrap.dedent(
