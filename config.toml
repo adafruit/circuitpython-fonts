@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MIT
 
 [defaults]
-sizes = [6, 8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 42, 48, 54, 60, 72, 84, 96, 108, 120, 144]
+sizes = [6, 8, 10, 12, 14, 18, 24, 30, 36, 42, 48, 54, 60, 72]
 
 # Note that subset ranges are *inclusive* of the upper bound in otf2bdf
 [variants]
@@ -11,3 +11,5 @@ latin1 = "32_255"
 
 # [FONT.FontFileNameWithoutExtension]
 # name = "desired_package_base_name"
+# filename = "relative/path/to/font_file.ttf_or_otf
+# license = "LICENSES/license-name.txt"
