@@ -6,7 +6,7 @@
 The goal of this repository is to generate a number of fonts that can be
 used in CircuitPython by simply importing them.
 
-It can be used with circup for easy installation:
+It can be used with (circup)[https://pypi.org/project/circup/] for easy installation:
 
 ```sh
 circup bundle-add jepler/circuitpython-fonts # You only need to do this once
@@ -40,3 +40,9 @@ Or, to be more technically accurte, they are rendered at a resolution of 1 pixel
 If you follow the [directions on learn](https://learn.adafruit.com/custom-fonts-for-pyportal-circuitpython-display/use-otf2bdf) your font is rendered at a scale of 1 pixel = 1/100 inch = 0.72 points.
 This means the resulting font pixel sizes for these libraries are around 38% smaller than if you follow the Learn guide instructions.
 In any case, you will likely need to manually test font sizes until you find the best one for your application and display.
+
+## Building locally
+
+The build process requires two programs to build: otf2bdf (from debian/ubuntu pacakage otf2bdf) and bdftopcf (from debian/ubuntu package xfonts-utils). Other Linux distributions and other operating systems will have different ways to aquire these tools, which may require building them from source.
+
+Once the dependencies are installed, simply invoke `build.py` and after a few minutes you will get a fresh font bundle in `dist/`.
