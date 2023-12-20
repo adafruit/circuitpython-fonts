@@ -1,26 +1,33 @@
-## Fonts for CircuitPython
+# CircuitPython Fonts Bundle
 
 <!-- SPDX-FileCopyrightText: 2023 Jeff Epler for Adafruit Industries -->
 <!-- SPDX-License-Identifier: MIT -->
 
-The goal of this repository is to generate a number of fonts that can be
+The repository generates a large number of bitmap fonts that can be
 used in CircuitPython by simply importing them.
 
-It can be used with (circup)[https://pypi.org/project/circup/] for easy installation:
+It can be used with [circup](https://pypi.org/project/circup/) for easy installation.
+
+Once you have installed circup and connected to a board, simply install the desired font(s):
 
 ```sh
-circup bundle-add jepler/circuitpython-fonts # You only need to do this once
-circup install font_free_mono_9_ascii
+circup bundle-add adafruit/circuitpython-fonts # You only need to do this once
+circup install font_free_mono_9
 ```
 
 The font can be used like so:
 ```python
-from font_free_mono_9_ascii import FONT as MONO_9
+from font_free_mono_9 import FONT as MONO_9
 from adafruit_display_text.bitmap_label import Label
 
 # ...
 label = Label(font=MONO_9, text="Hi Mom!")
 ```
+
+If you don't use circup, then simply grab the appropriate bundle from
+the Releases page. Unzip it, and then copy the desired folder(s) to your
+CircuitPython device. If you use a manual installation method, you'll also
+need to install `adafruit_bitmap_font` from the [Adfruit CircuitPython Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/).
 
 ## Adding new fonts
 
@@ -43,6 +50,9 @@ In any case, you will likely need to manually test font sizes until you find the
 
 ## Building locally
 
-The build process requires two programs to build: otf2bdf (from debian/ubuntu pacakage otf2bdf) and bdftopcf (from debian/ubuntu package xfonts-utils). Other Linux distributions and other operating systems will have different ways to aquire these tools, which may require building them from source.
+The build process requires these programs (instructions to install on Debian and Ubuntu Linux in parentheses):
+ * otf2bdf (sudo apt install otf2bdf)
+ * bdftopcf (sudo apt install xfonts-utils)
+ * circuitpython-build-bundles (sudo apt install pipx; pipx install circuitpython-build-tools)
 
 Once the dependencies are installed, simply invoke `build.py` and after a few minutes you will get a fresh font bundle in `dist/`.
