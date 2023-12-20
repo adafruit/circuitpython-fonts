@@ -24,6 +24,11 @@ from adafruit_display_text.bitmap_label import Label
 label = Label(font=MONO_9, text="Hi Mom!")
 ```
 
+If you don't use circup, then simply grab the appropriate bundle from
+the Releases page. Unzip it, and then copy the desired folder(s) to your
+CircuitPython device. If you use a manual installation method, you'll also
+need to install `adafruit_bitmap_font` from the [Adfruit CircuitPython Bundle](https://github.com/adafruit/Adafruit_CircuitPython_Bundle/).
+
 ## Adding new fonts
 
  * Copy the font into `fonts/`
