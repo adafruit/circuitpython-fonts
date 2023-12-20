@@ -1,4 +1,4 @@
-## Fonts for CircuitPython
+# CircuitPython Fonts Bundle
 
 <!-- SPDX-FileCopyrightText: 2023 Jeff Epler for Adafruit Industries -->
 <!-- SPDX-License-Identifier: MIT -->
@@ -11,7 +11,7 @@ It can be used with [circup](https://pypi.org/project/circup/) for easy installa
 Once you have installed circup and connected to a board, simply install the desired font(s):
 
 ```sh
-circup bundle-add jepler/circuitpython-fonts # You only need to do this once
+circup bundle-add adafruit/circuitpython-fonts # You only need to do this once
 circup install font_free_mono_9
 ```
 
