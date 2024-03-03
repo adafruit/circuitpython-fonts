@@ -12,7 +12,7 @@ Once you have installed circup and connected to a board, simply install the desi
 
 ```sh
 circup bundle-add adafruit/circuitpython-fonts # You only need to do this once
-circup install font_free_mono_9
+circup install font_free_mono_8
 ```
 
 The font can be used like so:
