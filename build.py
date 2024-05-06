@@ -11,9 +11,16 @@ import tomllib
 from collections import deque
 from multiprocessing import Pool
 from pathlib import Path
-from subprocess import check_call
+from subprocess import check_call, check_output
 
 from convert import convert
+
+version = check_output(
+    ["git", "describe", "--tags", "--always"],
+    cwd=Path(__file__).parent,
+    encoding="utf-8",
+).strip()
+print(f"{version=}")
 
 with open("config.toml", "rb") as f:
     config = tomllib.load(f)
@@ -39,6 +46,7 @@ def build(src, dest, size, variant_name, variant_arg):
 
             # CircuitPython font generated from {src} @{size}{" " if variant_name else ""}{variant_name}
             from adafruit_bitmap_font import bitmap_font
+            __version__ = "{version}"
             FONT = bitmap_font.load_font(__file__.rsplit("/", 1)[0] + "/font.pcf")
             """
         )
@@ -62,6 +70,7 @@ def build(src, dest, size, variant_name, variant_arg):
             # SPDX-License-Identifier: Unlicense
 
             CircuitPython font generated from {src} @{size}{" " if variant_name else ""}{variant_name}
+            corresponding to circuitpython-fonts version {version}
             """
         )
     )
