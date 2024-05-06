@@ -143,15 +143,17 @@ if __name__ == "__main__":
 
     if not "BUILD_ONLY" in os.environ:
         check_call(
-            "circuitpython-build-bundles",
-            "--output_directory",
-            "dist",
-            "--filename_prefix",
-            "circuitpython-fonts",
-            "--library_location",
-            "libraries/",
-            "--library_depth",
-            "1",
+            [
+                "circuitpython-build-bundles",
+                "--output_directory",
+                "dist",
+                "--filename_prefix",
+                "circuitpython-fonts",
+                "--library_location",
+                "libraries/",
+                "--library_depth",
+                "1",
+            ]
         )
 
     print(f"Generated {count} font libraries")
