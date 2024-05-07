@@ -17,11 +17,11 @@ circup install font_free_mono_8
 
 The font can be used like so:
 ```python
-from font_free_mono_9 import FONT as MONO_9
+from font_free_mono_8 import FONT as MONO_8
 from adafruit_display_text.bitmap_label import Label
 
 # ...
-label = Label(font=MONO_9, text="Hi Mom!")
+label = Label(font=MONO_8, text="Hi Mom!")
 ```
 
 If you don't use circup, then simply grab the appropriate bundle from
