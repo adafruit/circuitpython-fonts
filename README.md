@@ -43,7 +43,7 @@ More variants could be added for a good reason; it is configurable in config.tom
 ## Font Sizing
 
 The font sizes in this bundle are in pixels.
-Or, to be more technically accurte, they are rendered at a resolution of 1 pixel = 1/72 inch = 1 point.
+Or, to be more technically accurate, they are rendered at a resolution of 1 pixel = 1/72 inch = 1 point.
 If you follow the [directions on learn](https://learn.adafruit.com/custom-fonts-for-pyportal-circuitpython-display/use-otf2bdf) your font is rendered at a scale of 1 pixel = 1/100 inch = 0.72 points.
 This means the resulting font pixel sizes for these libraries are around 38% smaller than if you follow the Learn guide instructions.
 In any case, you will likely need to manually test font sizes until you find the best one for your application and display.
